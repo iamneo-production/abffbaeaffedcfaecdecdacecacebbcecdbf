@@ -1,7 +1,12 @@
-$folderPath = "$env:USERPROFILE/myfolder"
-$fileContent = "This is some text content."
+# Define the folder name and file name
+$folderName = "NewFolder"
+$fileName = "NewFile.txt"
 
-# Ensure the folder doesn't exist, then create it
-if (-not (Test-Path -Path $folderPath -PathType Container)) {
-    New-Item -Path $folderPath -ItemType Directory
-}
+# Create a new folder in the home directory
+New-Item -ItemType Directory -Name $folderName
+
+# Create a new file in the home directory
+New-Item -ItemType File -Name $fileName
+
+# Confirm the creation of the folder and file
+Write-Host "New folder '$folderName' and file '$fileName' created successfully."
