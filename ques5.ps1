@@ -10,6 +10,7 @@ new-item Test1.text
 new-item Test2.txt
 new-item Test3.txt
 #fourth part
+cd ..
 cd SubFolder2
 new-item Test4.text
 new-item Test5.txt
