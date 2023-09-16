@@ -1,6 +1,7 @@
-$n1 = read-host "Enter first number: "
-$n2 = read-host "Enter second number: "
-if(($n1 + $n2) -gt 70){
+$n1 =[int] (read-host "Enter first number: ")
+$n2 =[int] (read-host "Enter second number: ")
+$sum = $n1 + $n2
+if($sum -gt 70){
     write-host "Pass"
 }
 else {
